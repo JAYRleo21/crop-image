@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+html{
+  font-family: 16px;
+  min-height: 100%;
+}
+html, body{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+body{
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+}
+
+$primary: #15202F;
+
+.m-input-file{
+  cursor: pointer;
+  position: relative;
+  input{
+    width: 100%;
+    min-height: 4rem;
+    opacity: 0;
+    cursor: pointer;
+  }
+  label{
+    border: .25rem dashed $primary;
+    border-radius: .25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 4rem;
+    padding: 1rem 2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    pointer-events: none;
+    span{
+      display: block;
+    }
+    .text{
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}
+
+.crop-container{
+  display: block;
+  margin: auto;
+}
+
+.cropper-container{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  img{
+    display: block;
+    max-width: 30rem;
+    width: 100%;
+  }
+  .config{
+    display: flex;
+    gap: 1rem;
+    input{
+      flex: 1;
+    }
+  }
+  .buttons{
+    display: flex;
+    justify-content: space-between;
+    a, button{
+      background: none;
+      border: 2px solid $primary;
+      border-radius: .25rem;
+      color: $primary;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: .5rem 1rem;
+      &.disabled{
+        cursor: not-allowed;
+        opacity: .5;
+        pointer-events: none;
+      }
+    }
+  }
+}
+input{
+  &[type="text"], &[type="number"]{
+    border: 2px solid $primary;
+    border-radius: .25rem;
+    color: $primary;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+  }
+  &[type="number"]{
+    width: 5rem;
+  }
+}

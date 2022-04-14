@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop image</title>
+  <link rel="stylesheet" href="./styles/croppr.min.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <div class="crop-container">
+    <div class="m-input-file">
+      <input type="file" id="inputImage">
+      <label for="inputImage"><span class="text">Seleccionar imagen</span></label>
+    </div>
+    <div class="cropper-container">
+      <img src="" id="preview">
+      <div class="config">
+        <input type="text" id="defaultName" placeholder="Name">
+        <input type="number" min="2" max="10" id="quality" step="1" placeholder="6">
+      </div>
+      <div class="buttons">
+        <a href="" download="" id="imageLink" target="_blank" class="disabled">Save image</a>
+        <button id="cropImage">Crop image</button>
+      </div>
+    </div>
+  </div>
+  <script src="./js/croppr.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

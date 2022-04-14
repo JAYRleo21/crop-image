@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+html {
+  font-family: 16px;
+  min-height: 100%;
+}
+
+html, body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+}
+
+.m-input-file {
+  cursor: pointer;
+  position: relative;
+}
+
+.m-input-file input {
+  width: 100%;
+  min-height: 4rem;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.m-input-file label {
+  border: 0.25rem dashed #15202F;
+  border-radius: .25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 4rem;
+  padding: 1rem 2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.m-input-file label span {
+  display: block;
+}
+
+.m-input-file label .text {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.crop-container {
+  display: block;
+  margin: auto;
+}
+
+.cropper-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cropper-container img {
+  display: block;
+  max-width: 30rem;
+  width: 100%;
+}
+
+.cropper-container .config {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.cropper-container .config input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.cropper-container .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cropper-container .buttons a, .cropper-container .buttons button {
+  background: none;
+  border: 2px solid #15202F;
+  border-radius: .25rem;
+  color: #15202F;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: .5rem 1rem;
+}
+
+.cropper-container .buttons a.disabled, .cropper-container .buttons button.disabled {
+  cursor: not-allowed;
+  opacity: .5;
+  pointer-events: none;
+}
+
+input[type="text"], input[type="number"] {
+  border: 2px solid #15202F;
+  border-radius: .25rem;
+  color: #15202F;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+}
+
+input[type="number"] {
+  width: 5rem;
+}
+/*# sourceMappingURL=styles.css.map */
